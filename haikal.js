@@ -251,8 +251,8 @@ haikal.sendMessage(m.chat, anu, {quoted: hw})
 }
 //=================================================// 
 // Public & Self
-if (!haikal.public) {
-if (!m.key.fromMe) return
+if (haikal.public) {
+if (m.key.fromMe) return
 }
 //console bukan kontol
 if (m.message) {
